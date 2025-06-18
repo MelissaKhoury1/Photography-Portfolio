@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lens Photography</title>   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="imgagr/ico" href="./favicon.ico.png">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+
+
+   <!-----------------NAV BAR----------------->
+
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">LENS</a>
+            </div>
+            <a class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+        </a>
+            <ul class="navbar-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#sessions">SESSIONS</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!--------------------IMAGE SLIDER---------------->
+
+    <p><a name="home">
+
+
+    <div id="home" class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="slider1.jpg" alt="" style="width:100%;">
+                <div class="image-data">
+                    <span class="text">LENS</span>
+                    <h2>FROM CONCEPT TO CREATION</h2>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="slider2.jpg" alt="" style="width:100%">
+                <div class="image-data">
+                    <span class="text">LENS</span>
+                    <h2>CAPTURE THE MAGIC</h2>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="slider3.jpg" alt="" style="width:100%">
+                <div class="image-data">
+                    <span class="text">LENS</span>
+                    <h2>WHERE VISION COME TO LIFE</h2>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+          </div>    
+    </div>
+
+    </a></p>
+
+
+
+    <!------------------------ABOUT US------------------------->
+
+    <div id="about" class="section4">
+        <div class="container4">
+            <div class="content-section">
+                <div class="title0">
+                    <h3>About <span>Us</span></h3>
+                </div>
+                <div class="content">
+                    <h3>Only a vision-that is what one must have.</h3>
+                    <p>We invest noteworthy energy in wedding photography, corporate, family and senior pictures, normally heading off to your objective to get the perfect moment in the perfect place. 
+                    To us photography is about people being real and then letting us paint a picture of that moment to remember it forever.
+                    This is the story that matters most: real people, real stories, real moments. 
+                    We are incredibly blessed to have a team of photographers who work with us on any given weekend. 
+                    Please take a few minutes to get to know us.</p>  
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com" id="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com" id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com" id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.snapchat.com"><i class="fa fa-snapchat" aria-hidden="true"></i></a> 
+                </div>
+            </div>    
+            <div class="image-section">
+                <img src="lens.jpg">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!----------------------GALLERY------------------------->
+
+    <section id="work">
+        <div id="gallery"class="heading">
+            <h1>Our <span>Work</span></h1>
+        </div>
+
+        <div class="full-img" id="fullImgBox">
+            <img src="" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+
+
+        <div class="container1">
+            <div class="card">
+                <div class="imagebox">
+                    <img src="2.jpg" onclick="openFullImg(this.src)">
+                </div>
+              
+            </div>
+
+            <div class="card">
+                <div class="imagebox">
+                    <img src="17.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+     
+            </div>
+
+            <div class="card">
+                <div class="imagebox">
+                    <img src="6.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+     
+            </div>
+
+            <div class="card">
+                <div class="imagebox">
+                    <img src="29.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+        
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="work">
+        <div class="container1">
+            <div class="card1">
+                <div class="imagebox">
+                    <img src="19.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="imagebox">
+                    <img src="22.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+         
+            </div>
+
+            <div class="card1">
+                <div class="imagebox">
+                    <img src="18.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+             
+            </div>
+
+            <div class="card1">
+                <div class="imagebox">
+                    <img src="28.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+            
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="work">
+        <div class="container1">
+            <div class="card2">
+                <div class="imagebox">
+                    <img src="33.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+                
+            </div>
+
+            <div class="card2">
+                <div class="imagebox">
+                    <img src="7.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+            
+            </div>
+
+            <div class="card2">
+                <div class="imagebox">
+                    <img src="two.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+             
+            </div>
+
+            <div class="card2">
+                <div class="imagebox">
+                    <img src="20.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+            
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="work">
+        <div class="container1">
+            <div class="card3">
+                <div class="imagebox">
+                    <img src="27.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+            </div>
+
+            <div class="card3">
+                <div class="imagebox">
+                    <img src="25.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+            
+            </div>
+
+            <div class="card3">
+                <div class="imagebox">
+                    <img src="32.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+             
+            </div>
+
+            <div class="card3">
+                <div class="imagebox">
+                    <img src="21.jpg" onclick="openFullImg(this.src)" style="max-width: 100%;height:auto;">
+                </div>
+            
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!---------------------PRICES----------------->
+
+    <div id="sessions"class="container2">
+        <div class="heading">
+            <h2>Prices</h2>
+        </div>
+        <div class="price-row">
+            <div class="price-col">
+                <p>PERSONAL</p>
+                <h3>$199</h3>
+                <ul>
+                    <li>4 Hours per day</li>
+                    <li>10 Printed High-res Images</li>
+                    <li>1 Framed Images</li>
+                    <li>2 Outfit Changes</li>
+                    <li>All Images on CD </li>
+                    <li>1 Photographer &nbsp</li>
+                </ul>
+                <button><a href="#contact">BOOK NOW</a></button>
+            </div>
+            <div class="price-col">
+                <p>GROUP</p>
+                <h3>$399</h3>
+                <ul>
+                    <li>Half Day </li>
+                    <li>25 Printed High-res Images</li>
+                    <li>5 Framed Images</li>
+                    <li>4 Outfit Changes</li>
+                    <li>All Images on CD</li>
+                    <li>2 Photographer(s)</li>
+                </ul>
+                <button><a href="#contact">BOOK NOW</a></button>
+            </div>
+            <div class="price-col">
+                <p>EVENT</p>
+                <h3>$599</h3>
+                <ul>
+                    <li>Full Day</li>
+                    <li>50 Printed High-res Images</li>
+                    <li>10 Framed Images</li>
+                    <li>6 Outfit Changes</li>
+                    <li>All Images on CD</li>
+                    <li>3 Photographer(s)</li>
+                </ul>
+                <button><a href="#contact">BOOK NOW</a></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!---------------------CONTACT US-------------------->
+
+    <div id="contact" class="title">
+        <h2>Contact <span>Us</span></h2>
+    </div>
+    <div class="container3">
+        <form>
+            <h3>Send Message</h3>
+
+            <div class="input-group">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <label>Phone no.</label>
+                <input type="tel" placeholder="********">
+                <span id="phone=erroe"></span>
+            </div>
+
+            <div class="input-group">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+                <i class="fa fa-comment" aria-hidden="true"></i>
+                <label>Your Message</label>
+                <textarea id="message" row="4" placeholder="Enter your Message"></textarea>
+                <span id="message-error"></span>            
+            </div>
+
+            <button type="submit">Send</button>
+            <span id="submit-error"></span>
+
+        </form>
+    </div>
+
+
+
+    <!----------------------FOOTER--------------------->
+
+    <section class="footer">
+        <div class="social1">
+            <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.snapchat.com"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+                <a href="#sessions">Sessions</a>
+            </li>
+            <li>
+                <a href="#contact">Contact us</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Lens Photography @ 2023
+        </p>
+    </section>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>
+       const swiper = new Swiper('.swiper', {
+           autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+           },
+        loop: true,
+ 
+        pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+        },
+
+        navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+        },
+  
+        });
+    </script>
+
+
+
+
+</body>
+</html>
